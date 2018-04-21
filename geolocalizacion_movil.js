@@ -11,10 +11,10 @@ if ("geolocation" in navigator) {
        document.cookie = `longitud=${longitud}`;
        document.cookie = `altitud=${altitud}`;
        document.cookie = `exactitud=${exactitud}`;
-       
          
+        location.href ="http://localhost/geofoto/nuevodestino.php";
      });
-/*uso de cookis */
+
  
   
 } else {
