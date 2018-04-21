@@ -12,7 +12,7 @@ if ("geolocation" in navigator) {
        document.cookie = `altitud=${altitud}`;
        document.cookie = `exactitud=${exactitud}`;
          
-        location.href ="http://localhost/geofoto/nuevodestino.php";
+        /*location.href ="http://localhost/geofoto/nuevodestino.php";*/
      });
 
  
