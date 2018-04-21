@@ -1,8 +1,8 @@
 if ("geolocation" in navigator) {
     /* la geolocalización está disponible */
     alert("localizando");
-    //navigator.geolocation.getCurrentPosition(
-    navigator.geolocation.watchPosition(
+    navigator.geolocation.getCurrentPosition(
+    //navigator.geolocation.watchPosition(
      (position) => {      
        document.getElementById("x").value = position.coords.latitude;
          document.getElementById("y").value=position.coords.longitude;
