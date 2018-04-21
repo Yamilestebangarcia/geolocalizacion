@@ -6,8 +6,9 @@ if ("geolocation" in navigator) {
      (position) => {      
        document.getElementById("x").value = position.coords.latitude;
          document.getElementById("y").value=position.coords.longitude;
-         document.getElementById("z").value=position.coords.altitude;
          document.getElementById("exactitud").value=position.coords.accuracy;
+          document.getElementById("z").value=position.coords.altitude;
+         document.getElementById("exactitud_altura").value=position.coords.altitudeAccuracy;
         // document.getElementById("form").submit();         
      });
 /*uso de cookis */
