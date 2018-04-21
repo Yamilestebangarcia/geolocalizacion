@@ -3,18 +3,13 @@ if ("geolocation" in navigator) {
     alert("localizando");
     navigator.geolocation.getCurrentPosition(
      (position) => {      
-       let  latitud = position.coords.latitude;
-       let longitud= position.coords.longitude;
-       let altitud = position.coords.altitude;
-       let  exactitud= position.coords.accuracy;
-       document.cookie = `latitud=${latitud}`;
-       document.cookie = `longitud=${longitud}`;
-       document.cookie = `altitud=${altitud}`;
-       document.cookie = `exactitud=${exactitud}`;
-         
-        /*location.href ="http://localhost/geofoto/nuevodestino.php";*/
+       document.getElementById("x").value = position.coords.latitude;
+         document.getElementById("y").value=position.coords.longitude;
+         document.getElementById("z").value=position.coords.altitude;
+         document.getElementById("exactitud").value=position.coords.accuracy;
+         document.getElementById("form").submit();         
      });
-
+/*uso de cookis */
  
   
 } else {
