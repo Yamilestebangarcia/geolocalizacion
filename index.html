@@ -7,12 +7,15 @@
     <title>geolocalizacion</title>
 </head>
 <body>
-    <div id="x"></div>
-    <div id="y"></div>
-    <div id="z"></div>
-    <div id="exactitud"></div>
+<form action="http://localhost/geofoto/nuevodestino.php" method="POST" id="form">
+        <input type="hidden" name="gps_x" id="x" readonly required>
+        <input type="hidden" name="gps_y" id="y" readonly required>
+        <input type="hidden" name="gps_exactitud" id="exactitud" readonly required>
+        <input type="hidden" name="gps_z" id="z" readonly required>
+        <input type="hidden" name="gps_exactitud_altura" id="exactitud_altura" readonly required>
+    </form>
     <script src="geolocalizacion_movil.js">
-        
     </script>
 </body>
+
 </html>
